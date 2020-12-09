@@ -1,7 +1,7 @@
 const Game = require('../src/game').default
 const fs = require('fs')
 
-describe('App', () => {
+/*describe('App', () => {
   it('Contains the compiled JavaScript', async (done) => {
     fs.readFile('./public/main.js', 'utf8', (err, data) => {
       expect(err).toBe(null)
@@ -9,7 +9,7 @@ describe('App', () => {
       done()
     })
   })
-})
+})*/
 
 describe('Game', () => {
   let game, p1, p2
@@ -19,7 +19,7 @@ describe('Game', () => {
     game = new Game(p1, p2)
   })
 
-  describe('Game', () => {
+  /*describe('Game', () => {
     it('Initializes with two players', async () => {
       expect(game.p1).toBe('Salem')
       expect(game.p2).toBe('Nate')
@@ -41,7 +41,7 @@ describe('Game', () => {
       expect(new Game(p1, p2).player).toBe('Nate')
     })
   })
-
+*/
   describe('turn', () => {
     it("Inserts an 'X' into the top center", async () => {
       game.turn(0, 1)
